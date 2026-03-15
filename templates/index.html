@@ -1,5 +1,83 @@
 <!-- wp:template-part {"slug":"header"} /-->
 
-<!-- wp:post-content /-->
-
-<!-- wp:template-part {"slug":"footer"} /-->
+<!-- wp:html -->
+<section style="background:linear-gradient(135deg,#1a2744,#131921);padding:60px 0;text-align:center;">
+    <div class="ns-container">
+      <span class="ns-hero-badge">📝 NovaShop Blog</span>
+      <h1 style="color:#fff;font-size:2.5rem;font-weight:800;margin:16px auto;max-width:700px;">
+        Tech Tips & Deals for <span style="color:#ff9900;">Students</span>
+      </h1>
+      <p style="color:#ccc;font-size:17px;max-width:520px;margin:0 auto;">
+        Gadget guides, study tips, budget hacks and more!
+      </p>
+      <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:28px;">
+        <a href="/blog" style="background:#ff9900;color:#131921;padding:6px 18px;border-radius:20px;text-decoration:none;font-size:13px;font-weight:700;">All Posts</a>
+        <a href="/blog" style="background:transparent;color:#fff;padding:6px 18px;border-radius:20px;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #fff;">Productivity</a>
+        <a href="/blog" style="background:transparent;color:#fff;padding:6px 18px;border-radius:20px;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #fff;">Budget</a>
+        <a href="/blog" style="background:transparent;color:#fff;padding:6px 18px;border-radius:20px;text-decoration:none;font-size:13px;font-weight:600;border:1px solid #fff;">Setup</a>
+      </div>
+    </div>
+  </section>
+  <!-- /wp:html -->
+  
+  <!-- wp:html -->
+  <div style="background:#f0f2f2;padding:50px 0;">
+    <div class="ns-container">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+  <!-- /wp:html -->
+  
+  <!-- wp:query {"queryId":1,"query":{"perPage":10,"postType":"post","order":"desc","orderBy":"date","inherit":true}} -->
+  <div class="wp-block-query">
+  
+  <!-- wp:post-template -->
+  
+  <!-- wp:html -->
+  <div style="background:#fff;border:1px solid #d5d9d9;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:0;">
+  <!-- /wp:html -->
+  
+  <!-- wp:post-featured-image {"isLink":true,"height":"200px"} /-->
+  
+  <!-- wp:html -->
+  <div style="padding:16px;">
+  <!-- /wp:html -->
+  
+  <!-- wp:post-terms {"term":"category","style":{"typography":{"fontSize":"11px"},"spacing":{"margin":{"bottom":"8px"}}}} /-->
+  
+  <!-- wp:post-title {"isLink":true,"style":{"typography":{"fontSize":"16px","fontWeight":"700"},"spacing":{"margin":{"bottom":"8px"}},"elements":{"link":{"color":{"text":"#0f1111"}}}}} /-->
+  
+  <!-- wp:post-excerpt {"moreText":"Read More →","style":{"typography":{"fontSize":"13px"},"color":{"text":"#565959"},"spacing":{"margin":{"bottom":"10px"}}}} /-->
+  
+  <!-- wp:post-date {"format":"M j, Y","style":{"typography":{"fontSize":"12px"},"color":{"text":"#888"}}} /-->
+  
+  <!-- wp:html -->
+  </div>
+  </div>
+  <!-- /wp:html -->
+  
+  <!-- /wp:post-template -->
+  
+  <!-- wp:query-no-results -->
+  <!-- wp:html -->
+  <div style="text-align:center;padding:60px 24px;grid-column:1/-1;">
+    <h3 style="font-size:22px;color:#0f1111;margin-bottom:12px;">No posts yet!</h3>
+    <p style="color:#565959;">Check back soon!</p>
+  </div>
+  <!-- /wp:html -->
+  <!-- /wp:query-no-results -->
+  
+  <!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+  <!-- wp:query-pagination-previous /-->
+  <!-- wp:query-pagination-numbers /-->
+  <!-- wp:query-pagination-next /-->
+  <!-- /wp:query-pagination -->
+  
+  </div>
+  <!-- /wp:query -->
+  
+  <!-- wp:html -->
+      </div>
+    </div>
+  </div>
+  <!-- /wp:html -->
+  
+  <!-- wp:template-part {"slug":"footer"} /-->

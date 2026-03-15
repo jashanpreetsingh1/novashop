@@ -1,0 +1,11 @@
+<svg width="220" height="60" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+  <rect width="220" height="60" fill="none"></rect>
+  
+  <!-- icon -->
+  <rect x="5" y="15" width="30" height="30" rx="6" fill="#22c55e"></rect>
+  
+  <!-- text -->
+  <text x="45" y="38" font-size="26" font-family="Arial, sans-serif" fill="#0f172a" font-weight="bold">
+    NovaShop
+  </text>
+</svg>

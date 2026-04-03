@@ -1,55 +1,92 @@
 <!-- wp:template-part {"slug":"header"} /-->
 
 <!-- wp:html -->
-<article style="background:#f0f2f2;padding:40px 0 60px;">
-    <div class="ns-container" style="max-width:800px;margin:0 auto;padding:0 24px;">
-  
-      <!-- BACK BUTTON -->
-      <a href="/blog" style="display:inline-flex;align-items:center;gap:6px;color:#565959;text-decoration:none;font-size:14px;margin-bottom:24px;font-weight:600;">
-        ← Back to Blog
-      </a>
-  
-      <!-- POST CARD WRAPPER -->
-      <div style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.10);">
-  
-        <!-- FEATURED IMAGE -->
-        <!-- wp:post-featured-image {"style":{"layout":{"selfStretch":"fill"}},"height":"380px"} /-->
-  
-        <!-- POST CONTENT -->
-        <div style="padding:36px 40px;">
-  
-          <!-- CATEGORY + DATE -->
-          <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;flex-wrap:wrap;">
-            <!-- wp:post-terms {"term":"category","style":{"typography":{"fontSize":"12px"},"color":{"text":"#232f3e","background":"#e8f0fe"},"spacing":{"padding":{"top":"2px","bottom":"2px","left":"8px","right":"8px"}},"border":{"radius":"10px"}}} /-->
-            <span style="font-size:13px;color:#888;">
-              <!-- wp:post-date {"format":"M j, Y","style":{"typography":{"fontSize":"13px"},"color":{"text":"#888"}}} /-->
-            </span>
-          </div>
-  
-          <!-- TITLE -->
-          <!-- wp:post-title {"level":1,"style":{"typography":{"fontSize":"2rem","fontWeight":"800"},"spacing":{"margin":{"bottom":"24px"}},"color":{"text":"#0f1111"}}} /-->
-  
-          <!-- CONTENT -->
-          <div style="font-size:16px;line-height:1.8;color:#333;">
-            <!-- wp:post-content /-->
-          </div>
-  
-          <!-- DIVIDER -->
-          <hr style="border:none;border-top:1px solid #e0e0e0;margin:36px 0;" />
-  
-          <!-- BACK TO SHOP CTA -->
-          <div style="background:linear-gradient(135deg,#1a2744,#131921);border-radius:10px;padding:28px;text-align:center;">
-            <p style="color:#ccc;font-size:14px;margin-bottom:8px;">Looking for the products mentioned?</p>
-            <h3 style="color:#fff;font-size:20px;font-weight:700;margin-bottom:16px;">Check out our Student Deals! 🎓</h3>
-            <a href="/shop" style="background:#ff9900;color:#131921;padding:12px 28px;border-radius:25px;text-decoration:none;font-weight:700;font-size:15px;display:inline-block;">
-              Shop Now →
-            </a>
-          </div>
-  
-        </div>
-      </div>
+<div style="background:#f0f2f2;padding:40px 0 60px;">
+  <div class="ns-container" style="max-width:860px;margin:0 auto;padding:0 24px;">
+
+    <!-- BREADCRUMB -->
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:24px;font-size:13px;color:#888;">
+      <a href="/" style="color:#888;text-decoration:none;">Home</a>
+      <span>›</span>
+      <a href="/blog" style="color:#888;text-decoration:none;">Blog</a>
+      <span>›</span>
+      <span style="color:#0f1111;">Article</span>
     </div>
-  </article>
-  <!-- /wp:html -->
-  
-  <!-- wp:template-part {"slug":"footer"} /-->
+
+    <!-- ARTICLE WRAPPER -->
+    <article style="background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 16px rgba(0,0,0,0.10);">
+<!-- /wp:html -->
+
+<!-- wp:post-featured-image {"height":"420px"} /-->
+
+<!-- wp:html -->
+      <!-- POST HEADER -->
+      <div style="padding:40px 48px 0;">
+
+        <!-- CATEGORY + DATE ROW -->
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;flex-wrap:wrap;">
+<!-- /wp:html -->
+
+<!-- wp:post-terms {"term":"category","style":{"elements":{"link":{"color":{"text":"#232f3e"}}},"typography":{"fontSize":"12px"},"color":{"background":"#e8f0fe"},"spacing":{"padding":{"top":"3px","bottom":"3px","left":"10px","right":"10px"}},"border":{"radius":"12px"}}} /-->
+
+<!-- wp:html -->
+          <span style="color:#888;font-size:13px;display:flex;align-items:center;gap:4px;">📅
+<!-- /wp:html -->
+
+<!-- wp:post-date {"format":"F j, Y","style":{"typography":{"fontSize":"13px"},"color":{"text":"#888"}}} /-->
+
+<!-- wp:html -->
+          </span>
+        </div>
+<!-- /wp:html -->
+
+<!-- wp:post-title {"level":1,"style":{"typography":{"fontSize":"2.2rem","fontWeight":"800","lineHeight":"1.2"},"spacing":{"margin":{"bottom":"32px"}},"color":{"text":"#0f1111"}}} /-->
+
+<!-- wp:html -->
+      </div>
+
+      <!-- POST CONTENT -->
+      <div style="padding:0 48px 48px;">
+        <div class="single-post-content">
+<!-- /wp:html -->
+
+<!-- wp:post-content /-->
+
+<!-- wp:html -->
+        </div>
+
+        <!-- DIVIDER -->
+        <hr style="border:none;border-top:2px solid #f0f2f2;margin:40px 0;" />
+
+        <!-- AUTHOR + SHARE ROW -->
+        <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:40px;">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div style="width:44px;height:44px;background:linear-gradient(135deg,#131921,#232f3e);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#ff9900;font-weight:700;font-size:16px;">N</div>
+            <div>
+              <div style="font-size:14px;font-weight:700;color:#0f1111;">NovaShop Team</div>
+              <div style="font-size:12px;color:#888;">Student Tech Experts</div>
+            </div>
+          </div>
+          <a href="/blog" style="display:inline-flex;align-items:center;gap:6px;color:#565959;text-decoration:none;font-size:14px;font-weight:600;padding:8px 16px;border:1px solid #d5d9d9;border-radius:20px;">
+            ← Back to Blog
+          </a>
+        </div>
+
+        <!-- SHOP CTA -->
+        <div style="background:linear-gradient(135deg,#1a2744,#131921);border-radius:12px;padding:36px;text-align:center;">
+          <span style="display:inline-block;background:#ff9900;color:#131921;font-size:11px;font-weight:700;padding:3px 12px;border-radius:12px;margin-bottom:14px;letter-spacing:1px;text-transform:uppercase;">🎓 Student Deals</span>
+          <h3 style="color:#fff;font-size:22px;font-weight:800;margin-bottom:10px;line-height:1.3;">Looking for the products mentioned?</h3>
+          <p style="color:#ccc;font-size:14px;margin-bottom:20px;">Check out our student-priced deals on all the gadgets we review!</p>
+          <a href="/shop" style="background:#ff9900;color:#131921;padding:13px 32px;border-radius:25px;text-decoration:none;font-weight:700;font-size:15px;display:inline-block;transition:all 0.2s;">
+            Shop Student Deals →
+          </a>
+        </div>
+
+      </div>
+    </article>
+
+  </div>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:template-part {"slug":"footer"} /-->

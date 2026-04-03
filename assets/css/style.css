@@ -766,6 +766,118 @@
        .footer-bottom{flex-direction:column;text-align:center}
        .header-search{order:3;flex:1 1 100%}
    }
+   .wp-block-query {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 24px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Each card */
+.wp-block-post {
+    background: #fff !important;
+    border: 1px solid #d5d9d9 !important;
+    border-radius: 10px !important;
+    overflow: hidden !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08) !important;
+    transition: all 0.25s ease !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+.wp-block-post:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.14) !important;
+    border-color: #ff9900 !important;
+}
+
+/* Image */
+.wp-block-post .wp-block-post-featured-image img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+/* Category tag */
+.wp-block-post .wp-block-post-terms {
+    padding: 14px 16px 0 !important;
+    display: block !important;
+}
+
+.wp-block-post .wp-block-post-terms a {
+    background: #e8f0fe !important;
+    color: #232f3e !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    padding: 2px 8px !important;
+    border-radius: 10px !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    display: inline-block !important;
+}
+
+/* Title - remove blue link color */
+.wp-block-post .wp-block-post-title {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    padding: 8px 16px 4px !important;
+    margin: 0 !important;
+    color: #0f1111 !important;
+}
+
+.wp-block-post .wp-block-post-title a {
+    color: #0f1111 !important;
+    text-decoration: none !important;
+}
+
+.wp-block-post .wp-block-post-title a:hover {
+    color: #ff9900 !important;
+}
+
+/* Excerpt */
+.wp-block-post .wp-block-post-excerpt {
+    padding: 0 16px !important;
+    flex: 1 !important;
+}
+
+.wp-block-post .wp-block-post-excerpt p {
+    font-size: 13px !important;
+    color: #565959 !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+}
+
+.wp-block-post .wp-block-post-excerpt__more-link {
+    color: #ff9900 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    font-size: 13px !important;
+    display: block !important;
+    margin-top: 8px !important;
+}
+
+/* Date - bottom of card */
+.wp-block-post .wp-block-post-date {
+    font-size: 12px !important;
+    color: #888 !important;
+    padding: 12px 16px !important;
+    border-top: 1px solid #f0f0f0 !important;
+    margin-top: 12px !important;
+    display: block !important;
+}
+
+/* Responsive */
+@media(max-width:900px){
+    .wp-block-query{grid-template-columns:repeat(2,1fr) !important}
+}
+@media(max-width:580px){
+    .wp-block-query{grid-template-columns:1fr !important}
+}
    
    /* Mobile small - 480px */
    @media(max-width:480px){

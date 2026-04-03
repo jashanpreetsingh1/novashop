@@ -8,7 +8,7 @@
       Tech Tips & Deals for <span style="color:#ff9900;">Students</span>
     </h1>
     <p style="color:#ccc;font-size:17px;max-width:520px;margin:0 auto 28px;">
-      Gadget guides, study tips, budget hacks and more — written for students!
+      Gadget guides, study tips, budget hacks and more!
     </p>
     <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
       <a href="/blog" style="background:#ff9900;color:#131921;padding:8px 20px;border-radius:20px;text-decoration:none;font-size:13px;font-weight:700;">All Posts</a>
@@ -23,42 +23,35 @@
 <!-- wp:html -->
 <div style="background:#f0f2f2;padding:60px 0;">
   <div class="ns-container">
-
-    <!-- RESULTS COUNT -->
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;">
-      <h2 style="font-size:20px;font-weight:700;color:#0f1111;padding-left:14px;border-left:4px solid #ff9900;margin:0;">Latest Articles</h2>
+    <div style="margin-bottom:32px;">
+      <h2 style="font-size:22px;font-weight:700;color:#0f1111;padding-left:14px;border-left:4px solid #ff9900;margin:0;">Latest Articles</h2>
     </div>
-
-    <div class="blog-grid">
+    <div class="blog-archive-grid">
 <!-- /wp:html -->
 
 <!-- wp:query {"queryId":1,"query":{"perPage":9,"postType":"post","order":"desc","orderBy":"date","inherit":true}} -->
 <div class="wp-block-query">
 
-<!-- wp:post-template -->
+<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
 
 <!-- wp:html -->
-<div class="blog-card">
+<div class="blog-archive-card">
 <!-- /wp:html -->
 
-<!-- wp:post-featured-image {"isLink":true,"height":"220px","style":{"border":{"radius":"0px"}}} /-->
+<!-- wp:post-featured-image {"isLink":true,"height":"200px"} /-->
 
 <!-- wp:html -->
-<div class="blog-card-body">
+<div class="blog-archive-card-body">
 <!-- /wp:html -->
 
 <!-- wp:post-terms {"term":"category"} /-->
-
 <!-- wp:post-title {"isLink":true} /-->
-
-<!-- wp:post-excerpt {"moreText":"Read More →","excerptLength":20} /-->
+<!-- wp:post-excerpt {"moreText":"Read More →","excerptLength":15} /-->
 
 <!-- wp:html -->
-<div class="blog-card-meta">
+<div class="blog-archive-card-meta">
 <!-- /wp:html -->
-
 <!-- wp:post-date {"format":"M j, Y"} /-->
-
 <!-- wp:html -->
 </div>
 </div>
@@ -69,10 +62,10 @@
 
 <!-- wp:query-no-results -->
 <!-- wp:html -->
-<div style="text-align:center;padding:80px 24px;grid-column:1/-1;">
+<div style="text-align:center;padding:80px 24px;">
   <div style="font-size:48px;margin-bottom:16px;">📝</div>
-  <h3 style="font-size:22px;color:#0f1111;margin-bottom:12px;font-weight:700;">No posts yet!</h3>
-  <p style="color:#565959;font-size:15px;">Check back soon for student tech tips and deals.</p>
+  <h3 style="font-size:22px;color:#0f1111;margin-bottom:12px;">No posts yet!</h3>
+  <p style="color:#565959;">Check back soon for student tech tips!</p>
 </div>
 <!-- /wp:html -->
 <!-- /wp:query-no-results -->

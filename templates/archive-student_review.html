@@ -1,0 +1,58 @@
+<!-- wp:template-part {"slug":"header"} /-->
+
+<!-- wp:html -->
+<section style="background:linear-gradient(135deg,#1a2744,#131921);padding:60px 0;text-align:center;">
+    <div class="ns-container">
+      <span class="ns-hero-badge">⭐ Student Reviews</span>
+      <h1 style="color:#fff;font-size:2.2rem;font-weight:800;margin:16px 0;">
+        What <span style="color:#ff9900;">Students Say</span>
+      </h1>
+      <p style="color:#ccc;font-size:16px;max-width:500px;margin:0 auto;">
+        Real reviews from real students who love shopping at NovaShop.
+      </p>
+    </div>
+  </section>
+  <!-- /wp:html -->
+  
+  <!-- wp:html -->
+  <div style="background:#131921;padding:60px 0;">
+    <div class="ns-container">
+  <!-- /wp:html -->
+  
+  <!-- wp:query {"queryId":2,"query":{"perPage":6,"postType":"student_review","order":"desc","orderBy":"date","inherit":false}} -->
+  <div class="wp-block-query">
+  
+  <!-- wp:post-template -->
+  
+  <!-- wp:html -->
+  <div class="review-card">
+    <div style="color:#ff9900;font-size:20px;margin-bottom:12px;letter-spacing:2px;">★★★★★</div>
+  <!-- /wp:html -->
+  
+  <!-- wp:post-title {"isLink":true,"style":{"typography":{"fontSize":"16px","fontWeight":"700"},"color":{"text":"#ffffff"}}} /-->
+  
+  <!-- wp:post-excerpt {"moreText":"Read More →","excerptLength":20,"style":{"typography":{"fontSize":"13px"},"color":{"text":"#aaaaaa"}}} /-->
+  
+  <!-- wp:html -->
+  </div>
+  <!-- /wp:html -->
+  
+  <!-- /wp:post-template -->
+  
+  <!-- wp:query-no-results -->
+  <!-- wp:html -->
+  <div style="text-align:center;padding:60px;color:#aaa;">
+    <p style="font-size:16px;">No reviews yet. Check back soon!</p>
+  </div>
+  <!-- /wp:html -->
+  <!-- /wp:query-no-results -->
+  
+  </div>
+  <!-- /wp:query -->
+  
+  <!-- wp:html -->
+    </div>
+  </div>
+  <!-- /wp:html -->
+  
+  <!-- wp:template-part {"slug":"footer"} /-->

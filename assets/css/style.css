@@ -837,3 +837,78 @@
        .ns-hero-buttons{flex-direction:column;align-items:center}
        .ns-trust-bar .ns-container{flex-direction:column;align-items:flex-start;gap:14px}
    }
+
+
+
+   /* 
+   18. STUDENT REVIEWS - Archive Page
+   Query Loop styled for custom post type
+    */
+
+/* Dark background for reviews page */
+.wp-block-query:has(.review-card) {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 24px !important;
+    width: 100% !important;
+}
+
+/* Review card dark style */
+.review-card {
+    background: #232f3e !important;
+    border: 1px solid #37475a !important;
+    border-radius: 10px !important;
+    padding: 24px !important;
+    transition: all 0.2s ease !important;
+}
+
+.review-card:hover {
+    border-color: #ff9900 !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4) !important;
+}
+
+/* Title white color */
+.review-card .wp-block-post-title {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    margin-bottom: 12px !important;
+    padding: 0 !important;
+}
+
+.review-card .wp-block-post-title a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.review-card .wp-block-post-title a:hover {
+    color: #ff9900 !important;
+}
+
+/* Excerpt grey text */
+.review-card .wp-block-post-excerpt p {
+    color: #aaaaaa !important;
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+}
+
+.review-card .wp-block-post-excerpt__more-link {
+    color: #ff9900 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    display: block !important;
+    margin-top: 10px !important;
+}
+
+/* Responsive */
+@media(max-width:900px) {
+    .wp-block-query:has(.review-card) {
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+}
+
+@media(max-width:600px) {
+    .wp-block-query:has(.review-card) {
+        grid-template-columns: 1fr !important;
+    }
+}
